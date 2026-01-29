@@ -75,3 +75,39 @@ Enter temperature in Celsius:
 REPOSITORY          TAG       IMAGE ID       CREATED         SIZE
 celsius-converter   latest    3f5cbe5e7143   2 minutes ago   124MB
 138699fea56b   celsius-converter   "python3 py_1.py"   7 minutes ago   Exited (0) 6 minutes ago             frosty_lederberg
+    1  cd scripts/
+    2  cd /workspaces/Final_Project_Linux_Course/scripts && ./bash.sh ../archives/archives_copt.tar.gz ../archives/archive.tar.gz
+    3  ./ /workspaces/Final_Project_Linux_Course/archives/archive.tar.gz /workspaces/Final_Project_Linux_Course/archives/archive_copy.tar.gz 
+    4  /workspaces/Final_Project_Linux_Course/scripts/bash.sh /workspaces/Final_Project_Linux_Course/archives/archive.tar.gz /workspaces/Final_Project_Linux_Course/archives/archive_copy.tar.gz
+    5  cd ..
+    6  history 10 >> logs/log.txt
+    7  ls -R >> logs/log.txt
+    8  cd scripts/
+    9  python py_1.py 
+   10  python3 py_1.py >> ../logs/log.txt 
+   11  cd ..
+   12  touch Dockerfile
+   13  docker images
+   14  docker images >> logs/log.txt 
+   15  docker ps -a 
+   16  docker ps -a | "grep celsius-converter"
+   17  docker ps -a | grep "celsius-converter"
+   18  docker ps -a | grep "celsius-converter" >> logs/log.txt 
+   19  python3 scripts/py_2.py 
+   20  python3 scripts/py_2.py 
+   21  cd scripts/
+   22  chmod +x py_2.py 
+   23  python3 py_2.py 
+   24  python3 py_2.py 
+   25  docker build -t cell .
+   26  docker build -t py_logger_app .
+   27  cd ..
+   28  docker build -t py_logger_app .
+   29  docker run -it -v "$(pwd):/app" py_logger_app
+   30  docker run -it -v "$(pwd):/app" py_logger_app
+   31  docker build -t py_logger_app .
+   32  docker run -it -v "$(pwd):/app" py_logger_app
+   33  python3 scripts/py_2.py 
+   34  docker build -t py_logger_app .
+   35  docker run -it -v "$(pwd):/app" py_logger_app
+   36  history 50 >> logs/log.txt 
