@@ -1,0 +1,72 @@
+path:/workspaces/Final_Project_Linux_Course
+path:Thu Jan 29 08:12:01 UTC 2026
+    1  wget https://drive.google.com/file/d/1dn3weVJGfNG114INJ8mGLnZZRz9CQ2fR9t/view?usp=sharing
+    2  tar -xzf BioMiniProject_Helper_Files.tar.gz
+    3  mkdir -p data scripts logs
+    4  echo "path:$(pwd) >> logs/log.txt
+    5  echo "path:$(pwd)" >> logs/log.txt
+    6  echo "path:$(date)" >> logs/log.txt
+    7  touch data/file_{1..5}.txt
+    8  tar -czf archive.tar.gz data/
+    9  mkdir archives
+   10  mv archive.tar.gz archive
+   11  tar -czf archive.tar.gz data/
+   12  mv archive.tar.gz archives
+   13  history 20 >> logs/log.txt
+    1  cd scripts/
+    2  cd /workspaces/Final_Project_Linux_Course/scripts && ./bash.sh ../archives/archives_copt.tar.gz ../archives/archive.tar.gz
+    3  ./ /workspaces/Final_Project_Linux_Course/archives/archive.tar.gz /workspaces/Final_Project_Linux_Course/archives/archive_copy.tar.gz 
+    4  /workspaces/Final_Project_Linux_Course/scripts/bash.sh /workspaces/Final_Project_Linux_Course/archives/archive.tar.gz /workspaces/Final_Project_Linux_Course/archives/archive_copy.tar.gz
+    5  cd ..
+    6  history 10 >> logs/log.txt
+.:
+BioMiniProject_Helper_Files
+BioMiniProject_Helper_Files.tar.gz
+README.md
+archives
+data
+logs
+scripts
+
+./BioMiniProject_Helper_Files:
+analysis
+docker
+scripts
+
+./BioMiniProject_Helper_Files/analysis:
+analyze_fasta.R
+analyze_fasta.py
+
+./BioMiniProject_Helper_Files/docker:
+python
+r
+
+./BioMiniProject_Helper_Files/docker/python:
+Dockerfile
+
+./BioMiniProject_Helper_Files/docker/r:
+Dockerfile
+
+./BioMiniProject_Helper_Files/scripts:
+generate_test_images.sh
+process_images.sh
+
+./archives:
+archive.tar.gz
+archive_copy.tar.gz
+
+./data:
+file_1.txt
+file_2.txt
+file_3.txt
+file_4.txt
+file_5.txt
+
+./logs:
+log.txt
+
+./scripts:
+bash.sh
+py_1.py
+py_2.py
+py_3.py
