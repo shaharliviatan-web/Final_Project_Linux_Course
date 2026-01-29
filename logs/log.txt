@@ -70,3 +70,8 @@ bash.sh
 py_1.py
 py_2.py
 py_3.py
+Enter temperature in Celsius: 
+26.0°C = 78.8°F
+REPOSITORY          TAG       IMAGE ID       CREATED         SIZE
+celsius-converter   latest    3f5cbe5e7143   2 minutes ago   124MB
+138699fea56b   celsius-converter   "python3 py_1.py"   7 minutes ago   Exited (0) 6 minutes ago             frosty_lederberg
